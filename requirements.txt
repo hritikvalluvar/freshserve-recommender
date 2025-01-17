@@ -5,3 +5,4 @@ numpy
 asyncpg
 python-dotenv
 uvicorn
+hypercorn
