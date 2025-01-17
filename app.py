@@ -14,7 +14,7 @@ load_dotenv()
 # Initialize FastAPI app
 app = FastAPI()
 
-DB_URL = os.getenv("DB_URL")
+DB_URL = os.environ.get("DB_URL")
 
 if not DB_URL:
     raise ValueError("⚠️ Database URL is missing. Set DB_URL in environment variables.")
